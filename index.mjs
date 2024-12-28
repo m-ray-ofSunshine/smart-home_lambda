@@ -194,7 +194,7 @@ const handleAddNoteIntent = async (note) => {
             response: {
                 outputSpeech: {
                     type: 'PlainText',
-                    text: `I have added ${note} to your list.`,
+                    text: `I have added ${note} to your notes.`,
                 },
                 shouldEndSession: true,
             },
@@ -205,7 +205,7 @@ const handleAddNoteIntent = async (note) => {
             response: {
                 outputSpeech: {
                     type: 'PlainText',
-                    text: `Sorry, there was a problem adding ${note} to your list. Please try again later.`,
+                    text: `Sorry, there was a problem adding ${note} to your notes. Please try again later.`,
                 },
                 shouldEndSession: true,
             },
@@ -226,7 +226,7 @@ const handleRemoveNoteIntent = async (str) => {
             response: {
                 outputSpeech: {
                     type: 'PlainText',
-                    text: `I have removed ${noteToDelete.name} to your list.`,
+                    text: `I have removed ${noteToDelete.name} from your notes.`,
                 },
                 shouldEndSession: true,
             },
